@@ -6,7 +6,7 @@ html {
 
 body {
     background-color: var(--white);
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 800px;
     min-width: 375px;
 }
@@ -17,16 +17,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    margin-bottom: 1rem;
 }
 
 h1 {
     color: var(--very-dark-blue);
+    font-size: 25px;
 }
 
 .read-button {
     height: max-content;
     color: var(--dark-grayish-blue);
-    font-size: large;
+    cursor: pointer;
 }
 
 /* list of notifications */
@@ -38,7 +40,6 @@ h1 {
 }
 
 .message {
-    /* border: 2px solid black; */
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 9fr;
@@ -78,6 +79,7 @@ h1 {
 .photo img {
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 .text {
@@ -87,15 +89,18 @@ h1 {
 .name {
     font-weight: 800;
     color: var(--very-dark-blue);
+    cursor: pointer;
 }
 
 .post {
     font-weight: 800;
+    cursor: pointer;
 }
 
 .group {
     color: var(--blue);
     font-weight: 800;
+    cursor: pointer;
 }
 
 .time {
@@ -108,11 +113,27 @@ h1 {
     padding: 15px;
     color: var(--dark-grayish-blue);
     margin-right: 15px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
+/* on hover components */
+.read-button:hover,
+.name:hover,
+.post:hover {
+    color: var(--blue);
+}
+
+.private-msg:hover {
+    background-color: var(--light-grayish-blue2);
+}
+
+.photo img:hover {
+    box-shadow: 0 0 10px 1px var(--light-grayish-blue2);
+}
 
 /* attributions */
 .attribution {
     text-align: center;
     margin: 3rem auto;
-} 
+}
