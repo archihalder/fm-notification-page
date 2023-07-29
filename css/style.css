@@ -5,10 +5,20 @@ html {
 }
 
 body {
+    background-color: var(--very-light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
     background-color: var(--white);
-    margin: 1rem auto;
+    box-shadow: 0 0 20px 5px var(--light-grayish-blue2);
+    border-radius: 10px;
     max-width: 800px;
-    min-width: 375px;
+    margin: 3rem 1rem 1rem;
+    padding: 1rem;
 }
 
 /* nav bar */
