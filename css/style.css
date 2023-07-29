@@ -20,6 +20,27 @@ body {
     margin-bottom: 1rem;
 }
 
+.notifications {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.num-of-msg {
+    height: 30px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 8px;
+}
+
+.num-of-msg p {
+    color: var(--white);
+    font-weight: 800;
+}
+
 h1 {
     color: var(--very-dark-blue);
     font-size: 25px;
@@ -84,6 +105,16 @@ h1 {
 
 .text {
     color: var(--dark-grayish-blue);
+}
+
+.red-dot {
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 8px;
+    width: 8px;
+    margin: 0 0 2px 5px;
+    background-color: var(--red);
+    border-radius: 50%;
 }
 
 .name {

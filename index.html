@@ -7,20 +7,25 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 
   <title>Frontend Mentor | Notifications page</title>
 </head>
 
 <body>
   <div class="nav">
-    <h1>Notifications</h1>
-    <div class="read-button">Mark all as read</div>
+    <div class="notifications">
+      <h1>Notifications</h1>
+      <div class="num-of-msg">
+        <p>3</p>
+      </div>
+    </div>
+    <div class="read-button" onclick="msg_read">Mark all as read</div>
   </div>
   <div class="msg-list">
     <!--mark webber-->
@@ -32,6 +37,7 @@
         <div class="text">
           <span class="name">Mark Webber</span> reacted to your recent post
           <span class="post">My first tournament today!</span>
+          <span class="red-dot"></span>
         </div>
         <div class="time">1m ago</div>
       </div>
@@ -45,6 +51,7 @@
       <div class="msg-query">
         <div class="text">
           <span class="name">Angela Gray</span> followed you
+          <span class="red-dot"></span>
         </div>
         <div class="time">5m ago</div>
       </div>
@@ -59,6 +66,7 @@
         <div class="text">
           <span class="name">Jacob Thompson</span> has joined your group
           <span class="group">Chess Club</span>
+          <span class="red-dot"></span>
         </div>
         <div class="time">1 day ago</div>
       </div>
@@ -75,8 +83,8 @@
         </div>
         <div class="time">5 days ago</div>
         <div class="private-msg">
-          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
-          and I'm already having lots of fun and improving my game.
+          Hello, thanks for setting up the Chess Club. I've been a member for
+          a few weeks now and I'm already having lots of fun and improving my game.
         </div>
       </div>
     </div>
@@ -91,7 +99,7 @@
           <span class="name">Kimberly Smith</span> commented on your picture
         </div>
         <div class="photo">
-          <img src="/assets/images/image-chess.webp" alt="playing chess">
+          <img src="/assets/images/image-chess.webp" alt="playing chess" />
         </div>
         <div class="time">1 week ago</div>
       </div>
@@ -124,7 +132,6 @@
         <div class="time">2 weeks ago</div>
       </div>
     </div>
-
   </div>
 
   <div class="attribution">
@@ -132,6 +139,8 @@
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
       href="https://www.github.com/archihalder">Archi Halder</a>.
   </div>
+
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
